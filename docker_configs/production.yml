@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  port: 5432
+  host: postgres
+  database: postgres
+  username: postgres
+  password:

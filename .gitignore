@@ -1,0 +1,9 @@
+/.bundle
+/log/*
+!/log/.keep
+/tmp
+/public/system/*
+
+# ignore configs, manually copy
+# docker_configs/*
+.DS_Store

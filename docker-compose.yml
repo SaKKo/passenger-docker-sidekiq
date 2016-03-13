@@ -1,0 +1,8 @@
+rails:
+  build: .
+  links:
+    - postgres
+  ports:
+    - "80:80"
+postgres:
+  image: postgres
