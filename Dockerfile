@@ -24,6 +24,7 @@ ADD docker_configs/postgres-env.conf /etc/nginx/main.d/postgres-env.conf
 RUN mkdir -p /home/app/webapp
 WORKDIR /home/app/webapp
 ADD . ./
+RUN mkdir -p /home/app/webapp/tmp/pids
 ADD docker_configs/database.yml /home/app/webapp/config/database.yml
 ADD docker_configs/sidekiq.yml /home/app/webapp/config/sidekiq.yml
 ADD docker_configs/production.yml /home/app/webapp/config/settings/production.yml
